@@ -20,8 +20,7 @@ export function SetupNotice() {
       <InfoIcon />
       <AlertTitle>The database is not connected yet.</AlertTitle>
       <AlertDescription>
-        Add <code>NEXT_PUBLIC_SUPABASE_URL</code> and <code>NEXT_PUBLIC_SUPABASE_ANON_KEY</code> to the environment, then
-        reload.
+        Add <code>SUPABASE_URL</code> and <code>SUPABASE_ANON_KEY</code> to the environment, then reload.
       </AlertDescription>
     </Alert>
   );

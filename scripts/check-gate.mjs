@@ -18,8 +18,8 @@ const server = spawn(process.execPath, [next, "start", "-p", String(port)], {
     ...process.env,
     NODE_ENV: "production",
     SK_FIXTURES: "", // fixtures can never be on in production, but make sure
-    NEXT_PUBLIC_SUPABASE_URL: "http://127.0.0.1:9", // nothing listens here
-    NEXT_PUBLIC_SUPABASE_ANON_KEY: "placeholder-anon-key",
+    SUPABASE_URL: "http://127.0.0.1:9", // nothing listens here
+    SUPABASE_ANON_KEY: "placeholder-anon-key",
   },
 });
 
