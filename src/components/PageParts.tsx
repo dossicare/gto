@@ -21,7 +21,7 @@ export function SetupNotice() {
       <AlertTitle>The database is not connected yet.</AlertTitle>
       <AlertDescription>
         Add <code>NEXT_PUBLIC_SUPABASE_URL</code> and <code>NEXT_PUBLIC_SUPABASE_ANON_KEY</code> to the environment, then
-        reload. See <code>web/README.md</code>.
+        reload.
       </AlertDescription>
     </Alert>
   );

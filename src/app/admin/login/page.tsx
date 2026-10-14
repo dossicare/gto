@@ -31,7 +31,7 @@ export default async function LoginPage() {
           ) : (
             <Alert>
               <AlertDescription>
-                The database is not connected yet. Add the Supabase URL and anon key to the environment (see <code>web/README.md</code>).
+                The database is not connected yet. Add the Supabase URL and anon key to the environment.
               </AlertDescription>
             </Alert>
           )}

@@ -16,7 +16,7 @@ export async function loginAction(_prev: LoginState, formData: FormData): Promis
   if (!email || !password) return { error: "Enter your email and password." };
 
   const client = await createSessionClient();
-  if (!client) return { error: "The database is not connected yet. See web/README.md." };
+  if (!client) return { error: "The database is not connected yet. Add the Supabase URL and anon key to the environment." };
 
   const { error } = await client.auth.signInWithPassword({ email, password });
   // One message for every failure, so the form never reveals whether an email exists.
